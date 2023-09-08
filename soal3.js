@@ -34,6 +34,8 @@ const dataAngka = [9, 4, 7, 7, 4, 3, 2, 2, 8];
 const dataAngka2 = [1];
 
 console.log(getAngkaTerbesarKedua(dataAngka));
-console.log(getAngkaTerbesarKedua(dataAngka2));
 console.log(getAngkaTerbesarKedua(0));
 console.log(getAngkaTerbesarKedua());
+
+//contoh jika data array <2
+console.log(getAngkaTerbesarKedua(dataAngka2));

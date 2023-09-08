@@ -1,7 +1,7 @@
 //soal no 2
 
-const checkTypeNumber=(givenNumber)=> {
-  //jika tidak ada parameter yg dimasukkan
+const checkTypeNumber = (givenNumber) => {
+  //jika tidak ada parameter yg dimasukkan atau parameter = null
   if (typeof givenNumber === "undefined" || givenNumber === null) {
     return "Error : Bro where is the parameter?";
   }
@@ -17,7 +17,7 @@ const checkTypeNumber=(givenNumber)=> {
   } else {
     return "GANJIL";
   }
-}
+};
 
 console.log(checkTypeNumber(10));
 console.log(checkTypeNumber(3));
