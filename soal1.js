@@ -1,6 +1,6 @@
 //soal no 1
 
-function changeWord(selectedText, changedText, text) {
+const changeWord = (selectedText, changedText, text) => {
   //fungsi untuk merubah text/kata yg dipilih
   let textBaru = text.replaceAll(selectedText, changedText);
 
@@ -10,7 +10,7 @@ function changeWord(selectedText, changedText, text) {
   }
 
   return textBaru;
-}
+};
 
 const kalimat1 = "Andini sangat mencintai kamu selamanya";
 const kalimat2 = "Gunung bromo tak akan mampu menggambarkan besarnya cintaku padamu";

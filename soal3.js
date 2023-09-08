@@ -1,6 +1,6 @@
 //soal no 3
 
-function getAngkaTerbesarKedua(personName) {
+const getAngkaTerbesarKedua = (personName) => {
   //jika tidak memsukkan parameter
   if (personName === undefined) {
     return "Error: Bro where is the parameter?";
@@ -28,7 +28,7 @@ function getAngkaTerbesarKedua(personName) {
   }
 
   return sortedNumbers[1];
-}
+};
 
 const dataAngka = [9, 4, 7, 7, 4, 3, 2, 2, 8];
 const dataAngka2 = [1];

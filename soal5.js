@@ -39,7 +39,7 @@ const dataPenjualanNovel = [
   },
 ];
 
-function getInfoPenjualan(dataPenjualan) {
+const getInfoPenjualan = (dataPenjualan) => {
   let totalKeuntungan = 0;
   let totalModal = 0;
   let produkTerlaris = null;
@@ -90,7 +90,7 @@ function getInfoPenjualan(dataPenjualan) {
 
   const persentaseKeuntungan = (totalKeuntungan / totalModal) * 100;
 
-  return `totalKeuntungan: ${formattedTotalKeuntungan}\ntotalModal: ${formattedTotalModal}\npersentaseKeuntungan: ${persentaseKeuntungan.toFixed(2) + "%"}\nprodukBukuTerlaris: ${produkTerlaris}\npenulisTerlaris: ${penulisTerlaris}`
-}
+  return `totalKeuntungan: ${formattedTotalKeuntungan}\ntotalModal: ${formattedTotalModal}\npersentaseKeuntungan: ${persentaseKeuntungan.toFixed(2) + "%"}\nprodukBukuTerlaris: ${produkTerlaris}\npenulisTerlaris: ${penulisTerlaris}`;
+};
 
 console.log(getInfoPenjualan(dataPenjualanNovel));
